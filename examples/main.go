@@ -8,13 +8,13 @@ import (
 )
 
 func main() {
-	loga := logger.New()
-	loga.InfoFileName = "info.xxx"
-	loga.ErrorFileName = "error.xxx"
-	loga.JSONFormat = true
-	loga.LevelSeparate = true
-	loga.SetDivision(logger.DivisionTime)
-	loga.InitLogger()
+	log := logger.New()
+	log.InfoFileName = "info.log"
+	log.ErrorFileName = "error.log"
+	log.JSONFormat = false
+	log.LevelSeparate = true
+	log.SetDivision(logger.DivisionTime)
+	log.InitLogger(false)
 	logger.Info("SetupLogger")
 	logger.Error("error level test")
 	logger.Warn("warn level test")

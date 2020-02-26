@@ -31,7 +31,7 @@ func (e *LogOptions) initEncoder() zapcore.EncoderConfig {
 	}
 
 	// 是否输出颜色
-	if e.ColourOutput {
+	if e.ColourOutput && !e.JSONFormat {
 		//基本zapcore.LowercaseLevelEncoder。将日志级别字符串转化为小写
 		encoderConfig.EncodeLevel = zapcore.CapitalColorLevelEncoder
 	} else {
