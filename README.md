@@ -5,7 +5,7 @@
 
 ## Installation
 
-`go get -u idoall/logger`
+`go get -u github.com/idoall/logger`
 
 ## Quick Start
 
